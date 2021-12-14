@@ -199,16 +199,19 @@ aside li:hover {
     content: "\00a0\00a0\00a0\00a0";
 }
 
-.unusual-area {
-    height: 65px;
+.entries-break {
+    margin-top: 67px;
+    border: 2px solid #2fc1da;
 }
 
-.entries-listing {
-    border-top: 2px #2fc1da solid;
+.entry-content {
+    margin-left: 84px;
 }
 
-.entry {
-    margin-top: 80px;
+.entries-divider {
+    clear: both;
+    margin: 12px 0px 12px 0px;
+    border-top: 2px solid #d8d8d8;
 }
 
 .entry-content h3 {
