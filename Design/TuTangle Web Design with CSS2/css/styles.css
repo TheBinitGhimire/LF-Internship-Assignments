@@ -234,6 +234,10 @@ aside li:hover {
     font-weight: bolder;
 }
 
+.footer-menu a {
+    color: #d4d4d4;
+}
+
 .footer-menu li + li::before {
     content: "\00a0\00a0●\00a0\00a0";
 }
