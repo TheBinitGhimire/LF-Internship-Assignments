@@ -1,0 +1,221 @@
+@import url(reset.css);
+@import url(layout.css);
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+h1 {font-size: 26px !important;}
+h2 {font-size: 18px !important;}
+.normal {font-size: 16px !important;}
+.medium {font-size: 14px !important;}
+.small {font-size: 12px !important;}
+.x-small {font-size: 10px !important;}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+ul {list-style-type: none;}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.inline li {display: inline-block;}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+
+header > .site-information {
+    padding-top: 20px;
+}
+
+.site-information > .right {
+    margin-left: 28px;
+    padding-top: 8px;
+}
+
+.searchWrapper {
+    position: relative;
+}
+
+#searchInput {
+    border-style: hidden;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    font-size: 12px;
+    top: 3px;
+    right: 28px;
+    width: 240px;
+}
+
+#searchBtn {
+    margin-left: 4px;
+}
+
+#searchInput:focus {
+    outline: none;
+}
+
+#searchInput::placeholder{
+    opacity: 0.4;
+}
+
+
+header > .user-profile {
+    text-align: right;
+    padding-top: 24px;
+}
+
+.user-profile > ul {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.user-profile > ul li + li::before {
+    content: " | ";
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.nav-menu {
+    padding-left: 4px;
+    padding-right: 4px; 
+    font-weight: bold;
+}
+
+.nav-menu li + li::before {
+    content: "\00a0\00a0\00a0\00a0";
+}
+
+.nav-menu img {
+    width: 14px;
+    height: 14px;
+}
+
+.nav-menu a:hover {
+    color: #959595;
+}
+
+.title {
+    font-weight: bold;
+}
+
+aside li {    
+    padding: 16px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+aside li:hover {
+    background-color: #fefefe;
+}
+
+.entries-navigation {
+    margin-top: 12px;
+}
+
+.entries-navigation .left {
+    margin-right: 1px;
+}
+
+.entries-navigation .right {
+    margin-left: 1px;
+}
+
+.entriesWrapper {
+    position: relative;
+}
+
+.entriesWrapper h3 {
+    position: absolute;
+    top: 10px;
+    left: 88px;
+    text-align: center;
+    font-weight: bolder
+}
+
+.right .mainEntriesNav {
+    transform: scaleX(-1);
+}
+
+.miniEntriesNavL, .miniEntriesNavR {
+    position: absolute;
+    top: 36px;
+}
+
+.miniEntriesNavL {
+    left: 12px;
+}
+
+.miniEntriesNavR {
+    right: 12px;
+}
+
+.entriesWrapper li {
+    position: absolute;
+    top: 44px;
+}
+
+.entriesWrapper li[selected] {
+    color: #fefefe;
+    font-weight: bolder;
+}
+
+.left .entriesWrapper li:first-of-type {
+    left: 34px;
+}
+
+.left .entriesWrapper li:last-of-type {
+    right: 50px;
+}
+
+.right .entriesWrapper li:first-of-type {
+    left: 36px;
+}
+
+.right .entriesWrapper li:last-of-type {
+    right: 24px;
+}
+
+.entriesWrapper li + li::before {
+    content: "\00a0\00a0\00a0\00a0";
+}
+
+.unusual-area {
+    height: 65px;
+}
+
+.entries-listing {
+    border-top: 2px #2fc1da solid;
+    display: block;
+}
+
+.entry {
+    margin-top: 20px;
+}
+
+.entry-content h3 {
+    font-weight: bolder;
+}
+
+.footer-menu li + li::before {
+    content: "\00a0\00a0●\00a0\00a0";
+}
