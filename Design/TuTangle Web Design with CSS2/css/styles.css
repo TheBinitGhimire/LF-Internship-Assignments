@@ -178,7 +178,7 @@ aside li:hover {
     left: 34px;
 }
 
-.left .entriesWrapper li:last-child {
+.left .entriesWrapper li {
     right: 50px;
 }
 
@@ -186,7 +186,7 @@ aside li:hover {
     left: 36px;
 }
 
-.right .entriesWrapper li:last-child {
+.right .entriesWrapper li {
     right: 24px;
 }
 
