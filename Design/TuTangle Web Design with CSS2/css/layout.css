@@ -59,6 +59,7 @@ footer {
     font-weight: bold;
     bottom: 0px;
     margin-bottom: 0px;
-    visibility: hidden;
+    clear: both;
+    position: relative;
     width: 1002px;
 }
