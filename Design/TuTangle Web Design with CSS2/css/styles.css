@@ -71,11 +71,6 @@ header > .site-information {
     outline: none;
 }
 
-#searchInput:placeholder{
-    opacity: 0.4;
-}
-
-
 header > .user-profile {
     text-align: right;
     padding-top: 24px;
