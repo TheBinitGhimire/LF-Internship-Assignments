@@ -113,14 +113,14 @@ header > .user-profile {
     font-weight: bold;
 }
 
-aside li {    
+aside li, article li {    
     padding: 16px 16px;
     font-size: 14px;
     font-weight: bold;
     line-height: normal;
 }
 
-aside li:hover {
+aside li:hover, article li:hover {
     background-color: #fefefe;
 }
 

@@ -22,14 +22,22 @@ nav {
     background-color: #f5f5f5;
 }
 
-main {
+main > * {
     margin-top: 32px;
     width: 100%;
 }
 
-section, aside {
+section, aside, article {
     width: 100%;
     float: left;
+}
+
+aside, article {
+    background-color: #f5f5f5;
+}
+
+aside:first-child {
+    display: none;
 }
 
 @media only screen and (min-width: 992px) {
@@ -37,21 +45,25 @@ section, aside {
         position: relative;
     }
 
+    article {
+        display: none;
+    }
+
     section {
         margin-left: 28px;
-        width: 50%;
+        width: 55%;
+        float: right;
     }
-    
+  
     aside {
         background-color: #f5f5f5;
         width: 20%;
+        padding-bottom: 100px;
     }
-    
+
     aside:first-child {
-        width: 25%;
-        left: 0;
+        display: block;
     }
-    
 }
 
 @media only screen and (max-width: 584px) {
@@ -64,8 +76,8 @@ section, aside {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-	aside {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	aside, article {
 		width: 50%;
         padding: 0px 18px;
 	}
@@ -93,8 +105,9 @@ section, aside {
 
     .site-information > .right {
         margin-top: 16px;
+        width: 100%;
     }
-
+    
     nav > * {
         padding-top: 18px;
         line-height: 20px;
@@ -111,7 +124,12 @@ section, aside {
         align-self: center;
         line-height: 16px;
     }
+}
 
+@media only screen and (max-width: 398px){
+    .site-information > .right .right {
+        width: 10%;
+    }
 }
 
 footer {
