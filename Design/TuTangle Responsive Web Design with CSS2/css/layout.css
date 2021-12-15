@@ -127,8 +127,12 @@ aside:first-child {
 }
 
 @media only screen and (max-width: 398px){
+    .site-information > .right .left {
+        margin-left: -25px;
+    }
     .site-information > .right .right {
         width: 10%;
+        margin-left: -10px;
     }
 }
 
