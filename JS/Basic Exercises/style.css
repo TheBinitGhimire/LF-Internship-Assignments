@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+
+main {
+    border-top: 2px solid red;
+}
+
+section {
+    padding-bottom: 18px;
+    border-bottom: 2px solid red;
+}
+
+canvas {
+    display: none;
+    border: 2px solid navy;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+#scatterPlot {
+    width: 40%;
+    height: 20%;
+}
+
+#DOManimations {
+    width: 40%;
+    height: 40%;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
