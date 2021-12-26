@@ -40,7 +40,7 @@ body {
 .bElements {
     position: absolute;
     color: white;
-    opacity: 0.2;
+    opacity: 0.5;
     font-size: 4vh;
     font-weight: bold;
     text-shadow: -1px -1px black;
