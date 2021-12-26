@@ -6,10 +6,11 @@
 Just create a parent element with the class "bCarousel", and place your images under the IMG tag inside this element! You can create multiple slider elements in the same way.
 
 Easily define hold times, transition times, background colors and slider container width with HTML5 datasets (data-* attributes)!
-    * Hold Times (in seconds): **`data-interval=""`** (default: 5)
-    * Transition Times (in seconds): **`data-transition=""`** (default: 2)
-    * Background Colors (all formats supported): **`data-background=""`** (default: inherit from parent)
-    * Slider Container Width (any units supported): **`data-width=""`** (default: 100%)
+
+* Hold Times (in seconds): **`data-interval=""`** (default: 5)
+* Transition Times (in seconds): **`data-transition=""`** (default: 2)
+* Background Colors (all formats supported): **`data-background=""`** (default: inherit from parent)
+* Slider Container Width (any units supported): **`data-width=""`** (default: 100%)
 
 *Note that these attributes are completely optional; for default values, see above list!*
 
