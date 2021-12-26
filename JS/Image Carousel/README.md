@@ -14,6 +14,7 @@ Just create a parent element with the id "bCarousel", and place your images unde
     <img src="images/2.jpg" alt="Image 2" />
     <!-- Include as many images as you want! -->
 </div>
+<!-- Include the required JavaScript file of the library (./js/bCarousel.js) -->
 ```
 
 The **Live Demonstration** is [**available here**](https://whoisbinit.me/LF-Internship-Assignments/JS/Image%20Carousel/).
