@@ -1,0 +1,81 @@
+/* Webpage Styles - Start */
+#bCarousel {
+    margin: auto;
+}
+/* Webpage Styles - End */
+
+/*
+    bCarousel - An image slider library
+    Version: v0.0.1 (Codename: First Assignment)
+    Author: Binit Ghimire (https://github.com/thebinitghimire)
+
+    -> Usage:
+    Just create a parent element with the id "bCarousel", and place your images under the IMG tag inside this element!
+*/
+
+/* bCarousel Styles - Start */
+
+#bCarousel {
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.bElements {
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: -1px -1px black;
+    /* Making these elements unselectable */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#bCarousel img {
+    width: 100%;
+}
+
+.previous, .next{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.previous:hover, .next:hover{
+    color: black;
+    opacity: 0.5;
+}
+
+.previous {
+    left: 0;
+    padding-left: 8px;
+}
+
+.next {
+    right: 0;
+    padding-right: 8px;
+}
+
+.indicator {
+    z-index: 100;
+    bottom: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicator span {
+    font-size: 24px;
+}
+
+.indicator span:hover {
+    font-size: 32px;
+}
+
+span[data-active="0"] {
+    opacity: 0.5;
+}
+/* bCarousel Styles - End */
