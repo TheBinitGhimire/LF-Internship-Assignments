@@ -1,0 +1,100 @@
+/* Webpage Styles - Start */
+body {
+    max-width: 100%;
+    margin: 0;
+    height: 100%;
+    bottom: 10px;
+    text-align: center;
+    color: #1e272e;
+    text-shadow: 1px 1px #3c40c6;
+    background: #DA22FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+}
+
+.bCarousel {
+    display: inline-block;
+}
+
+/* Webpage Styles - End */
+
+/*
+    bCarousel - An image slider library
+    Version: v0.0.1 (Codename: First Assignment)
+    Author: Binit Ghimire (https://github.com/thebinitghimire)
+
+    -> Usage:
+    Just create a parent element with the id "bCarousel", and place your images under the IMG tag inside this element!
+*/
+
+/* bCarousel Styles - Start */
+
+.bCarousel {
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bElements {
+    position: absolute;
+    color: white;
+    opacity: 0.2;
+    font-size: 4vh;
+    font-weight: bold;
+    text-shadow: -1px -1px black;
+    /* Making these elements unselectable */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.bCarousel img {
+    width: 100%;
+}
+
+.previous, .next{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bCarousel:hover .bElements {
+    opacity: 0.8;
+}
+
+.previous:hover, .next:hover{
+    color: black;
+    opacity: 0.5;
+}
+
+.previous {
+    left: 0;
+    padding-left: 4px;
+}
+
+.next {
+    right: 0;
+    padding-right: 4px;
+}
+
+.indicator {
+    z-index: 100;
+    bottom: 0.1vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicator span {
+    font-size: 2vh;
+}
+
+.indicator span:hover {
+    font-size: 32px;
+}
+
+span[data-active="0"] {
+    opacity: 0.5;
+}
+/* bCarousel Styles - End */
