@@ -21,11 +21,11 @@ body {
 
 /*
     bCarousel - An image slider library
-    Version: v0.0.1 (Codename: First Assignment)
+    Version: v0.0.2 (Codename: Second Assignment)
     Author: Binit Ghimire (https://github.com/thebinitghimire)
 
     -> Usage:
-    Just create a parent element with the id "bCarousel", and place your images under the IMG tag inside this element!
+    Just create a parent element with the class "bCarousel", and place your images under the IMG tag inside this element! You can create multiple slider elements in the same way.
 */
 
 /* bCarousel Styles - Start */
