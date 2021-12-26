@@ -2,10 +2,23 @@
 ### Version: `v0.0.1` (Codename: `First Assignment`)
 ### Author: Binit Ghimire (https://github.com/thebinitghimire)
 
-## Usage:
+## Usage
 Just create a parent element with the id "bCarousel", and place your images under the IMG tag inside this element!
 
-## Features:
+### Sample Usage Demonstration
+
+```html
+<!-- Include the required stylesheet of the library (./css/style.css)-->
+<div id="bCarousel">
+    <img src="images/1.jpg" alt="Image 1" />
+    <img src="images/2.jpg" alt="Image 2" />
+    <!-- Include as many images as you want! -->
+</div>
+```
+
+The **Live Demonstration** is [**available here**](https://whoisbinit.me/LF-Internship-Assignments/JS/Image%20Carousel/).
+
+## Features
 * Multiple ways to switch images:
     - Using "previous" or "next" arrows,
     - Using the indicator dots at the bottom for navigation,
