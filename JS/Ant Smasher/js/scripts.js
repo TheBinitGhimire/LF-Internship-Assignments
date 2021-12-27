@@ -52,9 +52,7 @@ let Ant = function (x, y, size) {
         
         this.x += this.dx;
         this.y += this.dy;
-
     }
-
 }
 
 
