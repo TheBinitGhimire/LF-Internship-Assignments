@@ -3,6 +3,12 @@
 
 ### The Live Demo is [available here](https://whoisbinit.me/LF-Internship-Assignments/JS/Car%20Lane%20Game/index.html).
 
+## Gameplay
+
+### Screen: 1920x1080 | Document: 1536x864 | Canvas: 1280x720
+
+![Gameplay Screenshot](images/Gameplay.png)
+
 ## Instructions
 
 ### How to Play?
