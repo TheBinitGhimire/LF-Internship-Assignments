@@ -13,3 +13,11 @@ let hide = (e) => {
 let show = (e) => {
     e.style.display = "block";
 }
+
+let changeBody = (message) => {
+    if(!message) {
+        document.body.classList.remove("document");
+        document.body.style.backgroundColor = "#22b14c";
+    }
+    else document.body.classList.add("document");
+}

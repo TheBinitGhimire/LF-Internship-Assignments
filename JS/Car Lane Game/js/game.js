@@ -56,7 +56,7 @@ class Automated extends Car {
     drive() {
         if (this.direction == 1) this.y += this.speed;
         else this.y -= this.speed;
-        if (this.y > BOUNDARYY[1] || this.y < BOUNDARYY[0]) {
+        if (this.y >= BOUNDARYY[1] || (this.y + VEHICLESIZE[1]) <= BOUNDARYY[0]) {
             this.y = (this.direction) ? BOUNDARYY[0] : BOUNDARYY[1];
         }
     }
@@ -64,6 +64,7 @@ class Automated extends Car {
 
 
 let startGame = () => {
+    changeBody(0);
     gameStarted = true;
     score = DEFAULTSCORE;
     speed = DEFAULTSPEED;
@@ -89,36 +90,24 @@ let startGame = () => {
         gameStopped();
     }
 
-    left = () => {
-        if (user.x - HORIZONTALDIFFERENCE >= 200) user.x -= HORIZONTALDIFFERENCE;
-    }
-
-    right = () => {
-        if (user.x + HORIZONTALDIFFERENCE <= 450) user.x += HORIZONTALDIFFERENCE;
-    }
-
     document.addEventListener("keydown", function (e) {
         switch (e.key) {
             case "ArrowLeft":
-                left();
+            case "a":
+                if (user.x - HORIZONTALDIFFERENCE >= BOUNDARYX[0]) user.x -= HORIZONTALDIFFERENCE;
                 break;
             case "ArrowRight":
-                right();
-                break;
-            case "a":
-                left();
-                break;
             case "d":
-                right();
+                if (user.x + HORIZONTALDIFFERENCE <= BOUNDARYX[1]) user.x += HORIZONTALDIFFERENCE;
                 break;
         }
     })
 
     /* Game Lane Vehicles */
-    let car1 = new Car(200, 240);
-    let car2 = new Car(325, 0);
-    let car3 = new Car(450, 500);
-    let user = new User(325, 500);
+    let car1 = new Car(BOUNDARYX[0], 260);
+    let car2 = new Car(INITIALX, 16);
+    let car3 = new Car(BOUNDARYX[1], 500);
+    let user = new User(INITIALX, 600);
     let gameLaneCars = [car1, car2, car3, user];
 
     /* Automated Lane Vehicles */

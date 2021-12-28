@@ -4,6 +4,8 @@ if (!userOrientation.includes("landscape")) {
     alert("Please switch your screen to Landscape mode!");
 }
 
+document.documentElement.style.setProperty("--background", "url(../images/road.png) no-repeat center center fixed");
+
 find("audio").play();
 find("audio").loop = true;
 
@@ -14,6 +16,7 @@ let gameScreen = finds(".gameScreen")[0];
 let gameOverScreen = finds(".gameOverScreen")[0];
 
 show(startScreen);
+
 Array.from(finds(".highScore")).forEach(e => {
     e.innerHTML = localStorage.highScore || 0;
 })
@@ -21,6 +24,7 @@ Array.from(finds(".highScore")).forEach(e => {
 let gameStopped = () => {
     hide(gameScreen) || hide(startScreen);
     show(gameOverScreen);
+    changeBody(1);
     finds(".yourScore")[0].innerHTML = localStorage.latestScore;
     Array.from(finds(".highScore")).forEach(e => {
         e.innerHTML = localStorage.highScore || 0;
