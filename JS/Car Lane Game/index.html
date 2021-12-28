@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Lane Game | Binit Ghimire</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <main class="noselect">
+        <section class="startScreen">
+            <h1 class="sectionHeader">Car Lane Game</h1>
+            <h3 class="instructions"><em>Press A/D keys or left/right arrow keys to move the car!</em></h3>
+            <div class="scoreBlock">
+                <h2>High Score: <span class="highScore"></span></h2>
+            </div>
+            <button class="startGame">Start Game</button>
+        </section>
+
+        <section class="gameScreen">
+            <canvas class="gameArea" width="800" height="600"></canvas>
+        </section>
+
+        <section class="gameOverScreen">
+            <h1 class="sectionHeader">Game Over!</h1>
+            <div class="scoreBlock">
+                <h2>Your Score: <span class="yourScore">0</span></h2>
+                <h2>High Score: <span class="highScore"></span> </span>
+            </div>
+            <button class="mainScreen">Main Screen</button>
+        </section>
+    </main>
+    <audio autoplay>
+        <source src="./sounds/background.wav" type="audio/wav">
+    </audio>
+
+    <script type="text/javascript" src="./js/utils.js"></script>
+    <script type="text/javascript" src="./js/scripts.js"></script>
+    <script type="text/javascript" src="./js/gameValues.js"></script>
+    <script type="text/javascript" src="./js/gameAssets.js"></script>
+    <script type="text/javascript" src="./js/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../images/road.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Segoe UI';
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+section:not(.gameScreen) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.startScreen, .gameScreen, .gameOverScreen {
+    display: none;
+}
+
+.gameArea {
+    height: 100%;
+    width: 100%;
+}
+
+canvas {
+    background: url(../images/road.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.sectionHeader {
+    font-family: 'Rock 3D';
+    font-size: 8vh;
+    font-weight: bold;
+    color: #C0C0C0;
+    text-shadow: 2px 2px #2B2B2B;
+    animation: flicker 4s infinite linear;
+}
+
+@keyframes flicker {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+        color: #C0C0C0;
+        -webkit-text-stroke-color: #fff;
+    }
+
+    5%, 25%, 55%, 75%, 95% {
+        color: transparent;
+    }
+  }
+
+.instructions {
+    padding: 8px;
+    color: #9C000A;
+    background-color: #59CCFF;
+}
+
+.scoreBlock {
+    margin: 8px;
+}
+
+.scoreBlock h2 {
+    padding: 8px;
+    background-color: #072540;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2.5vh;
+}
+
+button {
+    margin: 16px;
+    border: 2px solid #1A1A1A;
+    border-radius: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    padding: 16px 24px;
+    background-color: #000000;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-8px);
+}
