@@ -71,7 +71,7 @@ let startGame = () => {
 
     collisionDetection = () => {
         [car1, car2, car3].forEach(element => {
-            if (element.x == user.x && (user.y - element.y) <= 100) {
+            if (element.x == user.x && (user.y - element.y) <= VEHICLESIZE[1]) {
                 accident();
             }
         })
