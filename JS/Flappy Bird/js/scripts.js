@@ -4,6 +4,9 @@ let gameOverScreen = finds(".gameOverScreen")[0];
 
 let gameStarted = false;
 
+find("audio").play();
+find("audio").loop = true;
+
 show(mainScreen);
 
 Array.from(finds(".highScore")).forEach(e => {
@@ -39,6 +42,6 @@ let seeInstructions = finds(".seeInstructions")[0];
 let instructionsBox = find(".gameInstructions");
 
 seeInstructions.addEventListener("click", () => {
-    if(instructionsBox.style.display != "block") show(instructionsBox);
+    if (instructionsBox.style.display != "block") show(instructionsBox);
     else hide(instructionsBox);
 })
