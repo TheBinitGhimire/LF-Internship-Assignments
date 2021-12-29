@@ -8,7 +8,7 @@
 
 ### How to Play?
 
-* Press [SPACE] key or click on the screen!
+* Press the [SPACE] key or click on the screen!
 
 
 ### Changing game values
