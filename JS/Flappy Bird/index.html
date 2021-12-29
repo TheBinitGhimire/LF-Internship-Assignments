@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird | Binit Ghimire</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+
+    <main class="noselect">
+        <section class="mainScreen">
+            <h1 class="sectionHeader">Flappy Bird</h1>
+            <div class="scoreBlock">
+                <h2>High Score: <span class="highScore"></span></h2>
+            </div>
+            <div class="gameAction">
+                <button class="startGame">Start Game</button>
+                <button class="seeInstructions">Instructions</button>
+            </div>
+            <div class="gameInstructions">
+                <h4>Press [SPACE] key or click on the screen!</h4>
+            </div>
+        </section>
+
+        <section class="gameScreen">
+            <canvas class="gameArea"></canvas>
+        </section>
+
+        <section class="gameOverScreen">
+            <h1 class="sectionHeader">Game Over!</h1>
+            <div class="scoreBlock">
+                <h2>Your Score: <span class="yourScore"></span></h2>
+                <h2>High Score: <span class="highScore"></span></h2>
+            </div>
+            <div class="gameAction">
+                <button class="startGame">Restart Game</button>
+                <button class="initializer">Main Screen</button>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./js/utils.js"></script>
+    <script type="text/javascript" src="./js/gameValues.js"></script>
+    <script type="text/javascript" src="./js/gameAssets.js"></script>
+    <script type="text/javascript" src="./js/game.js"></script>
+    <script type="text/javascript" src="./js/scripts.js"></script>
+</body>
+</html>
